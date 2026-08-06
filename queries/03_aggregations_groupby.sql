@@ -32,3 +32,30 @@ GROUP BY category;
 SELECT region, COUNT(*) AS customer_count
 FROM customers
 GROUP BY region;
+
+-- Total sales by customer
+SELECT customer_id, SUM(sales) AS total_sales
+FROM orders
+GROUP BY customer_id;
+
+-- Total sales by product
+SELECT product_id, SUM(sales) AS total_sales
+FROM orders
+GROUP BY product_id;
+
+-- Average profit by ship_mode
+SELECT ship_mode, AVG(profit) AS avg_profit
+FROM orders
+GROUP BY ship_mode;
+
+-- Customers with more than 2 orders
+SELECT customer_id, COUNT(*) AS order_count
+FROM orders
+GROUP BY customer_id
+HAVING COUNT(*) > 2;
+
+-- Products with total sales > 200
+SELECT product_id, SUM(sales) AS total_sales
+FROM orders
+GROUP BY product_id
+HAVING SUM(sales) > 200;
