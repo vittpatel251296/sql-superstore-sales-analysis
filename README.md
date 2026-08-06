@@ -27,12 +27,10 @@ ER diagram is in the Superstore ER Diagram.jpg file.
 
 ## Example Business Insights
 From the sample data:
-- West region generates the highest revenue.
-- Technology products have strong profit margins.
+- West region generates the highest revenue and has the highest average order value.
+- All products have equal profit margin.
 - A small number of customers contribute a large share of sales.
-- Daily sales show steady activity across the last two weeks of January 2024.
-
-*(Replace these with your actual findings from `insights/business_insights.md`.)*
+- Daily sales show unsteady activity across the last two weeks of January 2024.
 
 ## Files
 - `database-setup/schema.sql` – Table definitions
@@ -46,8 +44,8 @@ From the sample data:
 
 ## How to Run
 1. Open an online PostgreSQL playground like DB Fiddle (`https://www.db-fiddle.com/`).
-2. Copy contents of `schema.sql` into the **Schema** section and run.
-3. Copy contents of `data_import.sql` and run.
+2. Copy the contents of `schema.sql` into the **Schema** section and run.
+3. Copy the contents of `data_import.sql` and run.
 4. Copy queries from the `queries` folder into the **Query** section and run them one by one.
 
 ## Role Relevance
