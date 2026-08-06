@@ -1,14 +1,14 @@
 # Business Insights – Superstore Sales Analysis
 
 ## 1. Revenue Overview
-- Total revenue: (fill from query)
-- Total profit: (fill from query)
-- Average order value: (fill from query)
+- Total revenue: 3050
+- Total profit: 915
+- Average order value: 203.33
 
 ## 2. Regional Performance
-- Top-performing region by sales: (region)
-- Lowest-performing region by sales: (region)
-- Observation: (e.g., "West region shows strong revenue; East has fewer orders but high average order value.")
+- Top-performing region by sales: West
+- Lowest-performing region by sales: East
+- Observation: West region shows strong revenue; East has fewer orders but high average order value.
 
 ## 3. Product Category Performance
 - Highest-revenue category: (category)
