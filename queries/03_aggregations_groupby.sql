@@ -1,24 +1,34 @@
--- Sort customers by name
-SELECT * FROM customers ORDER BY customer_name ASC;
+-- Total number of orders
+SELECT COUNT(*) AS total_orders FROM orders;
 
--- Sort orders by sales (highest first)
-SELECT * FROM orders ORDER BY sales DESC;
+-- Total number of customers
+SELECT COUNT(*) AS total_customers FROM customers;
 
--- Top 5 highest sales orders
-SELECT * FROM orders
-ORDER BY sales DESC
-LIMIT 5;
+-- Total sales
+SELECT SUM(sales) AS total_sales FROM orders;
 
--- Top 3 most profitable orders
-SELECT * FROM orders
-ORDER BY profit DESC
-LIMIT 3;
+-- Total profit
+SELECT SUM(profit) AS total_profit FROM orders;
 
--- Sort products by category, then by product name
-SELECT * FROM products
-ORDER BY category ASC, product_name ASC;
+-- Average order value
+SELECT AVG(sales) AS avg_order_value FROM orders;
 
--- 5 cheapest orders
-SELECT * FROM orders
-ORDER BY sales ASC
-LIMIT 5;
+-- Min and max sales
+SELECT MIN(sales) AS min_sale,
+       MAX(sales) AS max_sale
+FROM orders;
+
+-- Count orders by ship mode
+SELECT ship_mode, COUNT(*) AS order_count
+FROM orders
+GROUP BY ship_mode;
+
+-- Count products by category
+SELECT category, COUNT(*) AS product_count
+FROM products
+GROUP BY category;
+
+-- Count customers by region
+SELECT region, COUNT(*) AS customer_count
+FROM customers
+GROUP BY region;
