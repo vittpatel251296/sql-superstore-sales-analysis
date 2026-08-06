@@ -16,7 +16,7 @@ Management wants to understand:
 - **Fields:** customer segment, region, category, sales, profit, order/ship dates
 
 ## ER Diagram
-(Insert `er-diagram.png` here – you can create it using dbdiagram.io by pasting your schema.)
+ER diagram is in the Superstore ER Diagram.jpg file.
 
 ## Key SQL Skills Demonstrated
 - Basic querying: `SELECT`, `WHERE`, `ORDER BY`, `LIMIT`
